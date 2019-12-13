@@ -1,0 +1,23 @@
+[package]
+name = "gloo-http"
+description = "Convenience crate for working with fetch"
+version = "0.1.0"
+authors = ["Rust and WebAssembly Working Group"]
+edition = "2018"
+license = "MIT/Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/rustwasm/gloo/tree/master/crates/http"
+homepage = "https://github.com/rustwasm/gloo"
+categories = ["api-bindings", "asynchronous", "wasm"]
+
+[dependencies]
+http = "0.2.0"
+js-sys = "0.3.31"
+wasm-bindgen = "0.2.54"
+wasm-bindgen-futures = "0.4.4"
+web-sys = { version = "0.3.19", features = ["Response", "Window", "RequestInit", "AbortSignal", "ObserverCallback", "ReferrerPolicy", "RequestCache", "RequestCredentials", "RequestInit", "RequestMode", "RequestRedirect", "Headers"] }
+
+[features]
+default = []
+
+[dev-dependencies]
